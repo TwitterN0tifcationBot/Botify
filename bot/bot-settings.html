@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botify - Bot Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Botify</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="new-bots.html">My Bots</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Documentation</a>
+            <a href="#">Support</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <section class="bot-settings">
+        <h1>Bot Settings</h1>
+        <form id="botSettingsForm">
+            <label for="botName">Bot Name:</label>
+            <input type="text" id="botName" name="botName" required>
+
+            <label for="botDescription">Bot Description:</label>
+            <textarea id="botDescription" name="botDescription" required></textarea>
+
+            <label for="botIcon">Bot Icon URL:</label>
+            <input type="url" id="botIcon" name="botIcon" required>
+
+            <label for="botStatus">Bot Status:</label>
+            <input type="text" id="botStatusInput" name="botStatus" value="Coded with Botify!" required>
+
+            <button type="submit">Save Settings</button>
+        </form>
+    </section>
+
+    <script src="bot-settings.js"></script>
+</body>
+</html>
