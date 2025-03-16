@@ -29,8 +29,12 @@ var verifyEmailBtn = document.getElementById("verifyEmailBtn");
 verifyEmailBtn.onclick = function() {
     var emailInput = document.getElementById("emailInput").value;
     if (emailInput) {
+        // Save the email to local storage
+        localStorage.setItem("userEmail", emailInput);
+        localStorage.setItem("botCount", 0); // Initialize bot count
         alert("Verification email sent to " + emailInput);
         modal.style.display = "none";
+        window.location.href = "new-bots.html"; // Redirect to new-bots page
     } else {
         alert("Please enter a valid email address.");
     }
