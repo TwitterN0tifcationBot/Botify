@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var createBotBtn = document.getElementById("createBotBtn");
     var botLimitError = document.getElementById("botLimitError");
+    var botStatus = document.getElementById("botStatus");
 
     // Get the bot count from local storage
     var botCount = parseInt(localStorage.getItem("botCount")) || 0;
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             botCount++;
             localStorage.setItem("botCount", botCount);
             alert("Bot created successfully! You now have " + botCount + " bots.");
+            botStatus.style.display = "block";
             if (botCount >= 8) {
                 createBotBtn.disabled = true;
                 botLimitError.style.display = "block";
