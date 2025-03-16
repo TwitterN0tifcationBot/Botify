@@ -1,3 +1,13 @@
+.create-bot {
+    text-align: center;
+    padding: 2rem;
+}
+
+.create-bot .error {
+    color: red;
+    margin-top: 1rem;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
