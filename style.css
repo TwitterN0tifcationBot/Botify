@@ -157,3 +157,40 @@ footer a {
     font-size: 1.2rem;
     color: green;
 }
+
+/* Bot Settings Page Styles */
+.bot-settings {
+    text-align: center;
+    padding: 2rem;
+}
+
+.bot-settings form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+.bot-settings label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+.bot-settings input[type="text"],
+.bot-settings input[type="url"],
+.bot-settings textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.bot-settings button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
