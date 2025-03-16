@@ -23,7 +23,7 @@
         <h1>Create Powerful Discord Bots with Ease</h1>
         <p>No coding required. Build, customize, and deploy your bot in minutes.</p>
         <div class="cta">
-            <button>Get Started</button>
+            <button id="getStartedBtn">Get Started</button>
             <button>Watch Demo</button>
         </div>
     </section>
@@ -115,5 +115,18 @@
         </p>
         <p>© 2023 Botify. All rights reserved.</p>
     </footer>
+
+    <!-- Modal -->
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Email Verification</h2>
+            <p>Please enter your email address to get started:</p>
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button id="verifyEmailBtn">Verify Email</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
